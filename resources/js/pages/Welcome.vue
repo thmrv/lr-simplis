@@ -94,10 +94,21 @@ const appName = import.meta.env.VITE_APP_NAME || 'Симплис';
         </div>
     </div>
     <div class="cases-wrapper-scroller" id="cases">
-       <TextZoomable :color="'black'" :text="t('cases_text_large')"></TextZoomable>
+        <TextZoomable :color="'black'" :text="t('cases_text_large')"></TextZoomable>
     </div>
-    <div class="cases-wrapper p-8 flex flex-col justify-between min-h-screen gap-y-12 bg-dark">
-       
+    <div class="cases-wrapper p-8 flex flex-row flex-wrap justify-between min-h-screen gap-12 bg-dark">
+        <div class="case-outer flex items-start gap-4 flex-col w-4/12 h-200">
+            <div class="case-title text-white font-sm">{{ t('case_title_1') }}</div>
+            <div class="case-wrapper flex items-center justify-center h-full w-full bg-neutral-900"></div>
+        </div>
+        <div class="case-outer flex items-start gap-4 flex-col w-3/12 h-100">
+            <div class="case-title text-white font-sm">{{ t('case_title_2') }}</div>
+            <div class="case-wrapper flex items-center justify-center h-full w-full bg-neutral-900"></div>
+        </div>
+        <div class="case-outer flex items-start gap-4 flex-col w-3/12 h-100">
+            <div class="case-title text-white font-sm">{{ t('case_title_3') }}</div>
+            <div class="case-wrapper flex items-center justify-center h-full w-full bg-neutral-900"></div>
+        </div>
     </div>
     <div class="branding-wrapper p-8 flex flex-col justify-between gap-y-12">
 
